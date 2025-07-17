@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>M3M Assistant</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+  <div id="chat-header">
+    <h1>M3M Assistant</h1>
+    <p>Your Real Estate Advisor 🤖</p>
+  </div>
+
+  <div id="chat-box" class="chat-box">
+    <div class="bot-message">🤖 Welcome to the M3M Assistant! I'm here to help you with all your real estate needs.</div>
+    <div class="bot-message">🤖 You can ask me about our projects, pricing, locations, and more.</div>
+    <div class="bot-message">🤖 Just type your question below and I'll do my best to assist you!</div ></div>
+
+  <div class="input-area">
+    <input
+      type="text"
+      id="user-input"
+      placeholder="Type your message..."
+      onkeydown="if(event.key==='Enter') sendMessage()"
+    />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+
+  <script>
+    async function sendMessage() {
+      const input = document.getElementById("user-input");
+      const message = input.value.trim();
+      if (!message) return;
+
+      const chatBox = document.getElementById("chat-box");
+
+      // Show user message
+      const userMsg = document.createElement("div");
+      userMsg.className = "user-message";
+      userMsg.textContent = "You: " + message;
+      chatBox.appendChild(userMsg);
+
+      // Show "Thinking..." loader
+      const botMsg = document.createElement("div");
+      botMsg.className = "bot-message";
+      botMsg.textContent = "🤔 Thinking...";
+      chatBox.appendChild(botMsg);
+      chatBox.scrollTop = chatBox.scrollHeight;
+
+      input.value = "";
+
+      try {
+        const res = await fetch("/chat", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ message }),
+        });
+
+        const data = await res.json();
+        botMsg.innerHTML = marked.parse(data.reply);
+      } catch (err) {
+        botMsg.textContent = "❌ Failed to fetch response.";
+      }
+        chatBox.scrollTop = chatBox.scrollHeight;
+    }
+  </script>
+</body>
+</html>

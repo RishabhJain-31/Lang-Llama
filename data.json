@@ -1,0 +1,2276 @@
+[
+  {
+    "name": "M3M Altitude",
+    "status": "ongoing",
+    "price": "₹8 Cr - ₹19 Cr",
+    "location": "Gurugram",
+    "address": "Golf Course Road Extn., Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-altitude",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_(4)_-_IPiQ7wAf6Y7X.jpg",
+    "description": "Designed by the award-winning UHA London, M3M Altitude is a stunning masterpiece inspired by nature\u2019s elegance. Soaring high, this architectural marvel offers a breathtaking sky experience. The unique Air Lounge features a first-of-its-kind glass Air Bridge, delivering panoramic views. Impeccably curated residences, with two master bedrooms and wrap-around decks, offer the perfect blend of luxury and comfort. Nestled within the prestigious M3M Golfestate, M3M Altitude stands proudly in Sector 65, Gurugram\u2019s most affluent\u00a0enclave.",
+    "amenities": [
+      "Sauna",
+      "Climbing Wall",
+      "Steam Room",
+      "Rooftop Gym",
+      "Cloud Yoga",
+      "Sky Lagoon Dining",
+      "Sunken Pods",
+      "Pool",
+      "Virtual Gaming Room",
+      "Alt-Brew Caf\u00e9",
+      "Banquet Hall",
+      "Sky Lounge",
+      "Co-working Area",
+      "Business Centre",
+      "Executive Lounge"
+    ],
+    "connectivity": [],
+    "configurations": [
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "3712 SQ.FT",
+            "price": "Price on Request"
+          },
+          {
+            "area": "3755 SQ.FT",
+            "price": "₹ 8.92 Cr"
+          },
+          {
+            "area": "3800 SQ.FT",
+            "price": "Price on Request"
+          },
+          {
+            "area": "4200 SQ.FT",
+            "price": "Price on Request"
+          },
+          {
+            "area": "4270 SQ.FT",
+            "price": "₹ 10.14 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "3685 SQ.FT",
+            "price": "₹ 8.75 Cr"
+          },
+          {
+            "area": "4245 SQ.FT",
+            "price": "₹ 10.08 Cr"
+          }
+        ]
+      },
+      {
+        "type": "5 BHK Apartment",
+        "variants": [
+          {
+            "area": "7515 SQ.FT",
+            "price": "₹ 17.85 Cr"
+          },
+          {
+            "area": "8065 SQ.FT",
+            "price": "₹ 19.16 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Mansion",
+    "status": "ongoing",
+    "price": "₹3.52 Cr - ₹12.54 Cr",
+    "location": "Delhi, NCR",
+    "address": "Sector 113, SCDA, Dwarka Expressway, Delhi NCR",
+    "link": "https://m3mindia.com/residential/m3m-mansion",
+    "image": "https://m3mindia.com/storage/dy-images/residential/banner_images/desktop_banner_(1)_-_NCkzub2ZwA6C.jpg",
+    "description": "M3M Mansion is truly a remarkable addition to the master development, SCDA, encapsulating a luxurious golf-themed lifestyle with meandering water bodies, exquisite landscape and an uber luxury club life. Each residence is meticulously designed to provide a blend of modern architecture with spacious interiors ensuring  that elegance and comfort are at the forefront of M3M Mansion.",
+    "amenities": [
+      "Multiple Pools",
+      "Golf Chip & Putt Space",
+      "Cricket",
+      "Badminton",
+      "Tennis",
+      "Business Centre",
+      "Amphitheatre",
+      "Banquet Hall",
+      "Pet Parks",
+      "Yoga Zone",
+      "Kids Play Area",
+      "Mini Theatre",
+      "Cycling Track",
+      "Indoor Temperature Regulated Pool",
+      "Gaming Zone"
+    ],
+    "connectivity": [
+      {
+        "name": "UER II",
+        "distance": "3 Minutes Away"
+      },
+      {
+        "name": "Yashobhoomi",
+        "distance": "5 Minutes Away"
+      },
+      {
+        "name": "IGI Airport, Delhi",
+        "distance": "7 Minutes Away"
+      },
+      {
+        "name": "Dwarka Golf Course",
+        "distance": "10 Minutes Away"
+      },
+      {
+        "name": "Bharat Vandana Park",
+        "distance": "10 Minutes Away"
+      },
+      {
+        "name": "New Diplomatic Zone",
+        "distance": "15 Minutes Away"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1638 SQ.FT",
+            "price": "₹ 3.52 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "2080 SQ.FT",
+            "price": "₹ 4.47 Cr"
+          },
+          {
+            "area": "2190 SQ.FT",
+            "price": "₹ 4.71 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "2077 SQ.FT",
+            "price": "₹ 4.36 Cr"
+          },
+          {
+            "area": "2316 SQ.FT",
+            "price": "₹ 4.86 Cr"
+          },
+          {
+            "area": "2336 SQ.FT",
+            "price": "₹ 4.90 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "2700 SQ.FT",
+            "price": "₹ 5.80 Cr"
+          },
+          {
+            "area": "3230 SQ.FT",
+            "price": "₹ 6.94 Cr"
+          },
+          {
+            "area": "5637 SQ.FT",
+            "price": "₹ 11.83 Cr"
+          },
+          {
+            "area": "5906 SQ.FT",
+            "price": "₹ 12.40 Cr"
+          },
+          {
+            "area": "5971 SQ.FT",
+            "price": "₹ 12.54 Cr"
+          },
+          {
+            "area": "5637 SQ.FT",
+            "price": "₹ 11.84 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "2705 SQ.FT",
+            "price": "₹ 5.68 Cr"
+          },
+          {
+            "area": "2848 SQ.FT",
+            "price": "₹ 5.98 Cr"
+          },
+          {
+            "area": "2975 SQ.FT",
+            "price": "₹ 6.25 Cr"
+          },
+          {
+            "area": "3046 SQ.FT",
+            "price": "₹ 6.40 Cr"
+          },
+          {
+            "area": "3152 SQ.FT",
+            "price": "₹ 6.62 Cr"
+          },
+          {
+            "area": "3244 SQ.FT",
+            "price": "₹ 6.81 Cr"
+          },
+          {
+            "area": "3442 SQ.FT",
+            "price": "₹ 7.23 Cr"
+          },
+          {
+            "area": "3520 SQ.FT",
+            "price": "₹ 7.39 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Penthouse",
+        "variants": [
+          {
+            "area": "4290 SQ.FT",
+            "price": "₹ 9.22 Cr"
+          },
+          {
+            "area": "5900 SQ.FT",
+            "price": "₹ 12.69 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "4311 SQ.FT",
+            "price": "₹ 9.05 Cr"
+          },
+          {
+            "area": "4300 SQ.FT",
+            "price": "₹ 9.03 Cr"
+          }
+        ]
+      },
+      {
+        "type": "5 BHK Penthouse",
+        "variants": [
+          {
+            "area": "6405 SQ.FT",
+            "price": "₹ 13.77 Cr"
+          },
+          {
+            "area": "6695 SQ.FT",
+            "price": "₹ 14.39 Cr"
+          }
+        ]
+      },
+      {
+        "type": "5 BHK Apartment",
+        "variants": [
+          {
+            "area": "6478 SQ.FT",
+            "price": "₹ 13.60 Cr"
+          },
+          {
+            "area": "6571 SQ.FT",
+            "price": "₹ 13.80 Cr"
+          },
+          {
+            "area": "6769 SQ.FT",
+            "price": "₹ 14.21 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M The Cullinan",
+    "status": "ongoing",
+    "price": "₹7.76 Cr - ₹14.09 Cr",
+    "location": "Noida",
+    "address": "Noida",
+    "link": "https://m3mindia.com/residential/m3m-the-cullinan",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_Cullinun-res_-_44jGvejBdJxY.jpg",
+    "description": "M3M The Cullinan, an emblem of grace and grandeur that touches the skies in Sector 94, Noida. Expansive 3, 4, and 5 BHK residences come with floor-to-ceiling windows offering panoramic views of the city skyline and golf course. Each residence is meticulously crafted with extended balconies, spacious rooms, and modern amenities that define elegance. The Cullinan\u2019s design captures the spirit of exclusivity, featuring a lavish clubhouse, infinity pool, landscaped gardens, and state-of-the-art interiors. Live the pinnacle of sophistication, where every moment celebrates style and comfort.",
+    "amenities": [
+      "Fitness Center",
+      "Sports Courts",
+      "Swimming Pools",
+      "Outdoor Spaces",
+      "Clubhouse",
+      "Community Center",
+      "Children's Play Area",
+      "Senior Citizen's Corner",
+      "Spa and Wellness",
+      "Game Room",
+      "Movie Theater",
+      "Party\u00a0Lawn"
+    ],
+    "connectivity": [
+      {
+        "name": "2 Minutes\u00a0Away",
+        "distance": "Amity University"
+      },
+      {
+        "name": "5 Minutes\u00a0Away",
+        "distance": "Max Healthcare"
+      },
+      {
+        "name": "5 Minutes\u00a0Away",
+        "distance": "Jasola Business Park"
+      },
+      {
+        "name": "12 Minutes\u00a0Away",
+        "distance": "Ansal Plazza"
+      },
+      {
+        "name": "5 Minutes\u00a0Away",
+        "distance": "Radisson Blu -Sector 18"
+      },
+      {
+        "name": "10 Minutes\u00a0Away",
+        "distance": "Apollo Hospital"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "3270 SQ.FT",
+            "price": "₹ 7.76 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "4200 SQ.FT",
+            "price": "Price on Request"
+          },
+          {
+            "area": "4315 SQ.FT",
+            "price": "₹ 10.24 Cr"
+          }
+        ]
+      },
+      {
+        "type": "5 BHK Apartment",
+        "variants": [
+          {
+            "area": "5935 SQ.FT",
+            "price": "₹ 14.09 Cr"
+          },
+          {
+            "area": "6100 SQ.FT",
+            "price": "Price on Request"
+          },
+          {
+            "area": "6220 SQ.FT",
+            "price": "Price on Request"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Crown",
+    "status": "ongoing",
+    "price": "₹2.95 Cr - ₹5.07 Cr",
+    "location": "Delhi, NCR",
+    "address": "Sector 111, SCDA, Dwarka Expressway, Delhi NCR",
+    "link": "https://m3mindia.com/residential/m3m-crown",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/m3m-crown-desktop_-_Ps3LM8TmGv6e.jpg",
+    "description": "M3M Crown features a breath-taking Waterfront Club, masterfully crafted as part of SCDA's iconic architectural vision. Sophisticated and grand, its unique design sets a benchmark, seamlessly blending leafy curvatures with the serene surroundings, creating a gentle flow toward terraced gardens and a charming caf\u00e9.   \r\n\r\nWhether it\u2019s a moment of quiet reflection by the tranquil lake or indulging in a delightful culinary journey, the club promises experiences that captivate every sense.   \r\n\r\nWith thoughtfully curated spaces and amenities both inside and out, every day here feels like an escape to a luxurious resort\u2014a true haven of immersive elegance.",
+    "amenities": [
+      "Gym",
+      "Meditation Zone",
+      "Spa",
+      "Yoga Zone",
+      "Badminton Court",
+      "Swimming Pool",
+      "Lawn Tennis",
+      "Boxing Ring",
+      "Cricket Net",
+      "Squash Court",
+      "Climbing Wall",
+      "Butterfly Valley & Ornamental Park",
+      "Mist Garden",
+      "Zen Garden",
+      "French Garden",
+      "Senior Citizen Park",
+      "Garden of Flowers",
+      "Bamboo Forest",
+      "Reading Room",
+      "Kids Play Area",
+      "Walking Tracks",
+      "Meditation Hall",
+      "Amphitheatre",
+      "Pool Side Cafe"
+    ],
+    "connectivity": [
+      {
+        "name": "UER 11",
+        "distance": "3 Minutes Away"
+      },
+      {
+        "name": "Yashobhoomi",
+        "distance": "5 Minutes Away"
+      },
+      {
+        "name": "IGI Airport, Delhi",
+        "distance": "7 Minutes Away"
+      },
+      {
+        "name": "Dwarka Golf Course",
+        "distance": "10 Minutes Away"
+      },
+      {
+        "name": "Bharat Vandana Park",
+        "distance": "10 Minutes Away"
+      },
+      {
+        "name": "New Diplomatic Zone",
+        "distance": "15 Minutes Away"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1615 SQ.FT",
+            "price": "₹ 3.07 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1555 SQ.FT",
+            "price": "₹ 2.95 Cr"
+          },
+          {
+            "area": "1605 SQ.FT",
+            "price": "₹ 3.05 Cr"
+          },
+          {
+            "area": "1665 SQ.FT",
+            "price": "₹ 3.16 Cr"
+          },
+          {
+            "area": "1868 SQ.FT",
+            "price": "₹ 3.55 Cr"
+          },
+          {
+            "area": "2105 SQ.FT",
+            "price": "₹ 4.0 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1795 SQ.FT",
+            "price": "₹ 3.41 Cr"
+          },
+          {
+            "area": "1825 SQ.FT",
+            "price": "₹ 3.47 Cr"
+          },
+          {
+            "area": "1895 SQ.FT",
+            "price": "₹ 3.6 Cr"
+          },
+          {
+            "area": "2022 SQ.FT",
+            "price": "₹ 3.84 Cr"
+          },
+          {
+            "area": "2080 SQ.FT",
+            "price": "₹ 3.95 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "2248 SQ.FT",
+            "price": "₹ 4.27 Cr"
+          },
+          {
+            "area": "2305 SQ.FT",
+            "price": "₹ 4.38 Cr"
+          },
+          {
+            "area": "2400 SQ.FT",
+            "price": "₹ 4.56 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "2510 SQ.FT",
+            "price": "₹ 4.77 Cr"
+          },
+          {
+            "area": "2570 SQ.FT",
+            "price": "₹ 4.88 Cr"
+          },
+          {
+            "area": "2670 SQ.FT",
+            "price": "₹ 5.07 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Golf Hills",
+    "status": "ongoing",
+    "price": "₹2.08 Cr - ₹3.94 Cr",
+    "location": "Gurugram",
+    "address": "Sector 79, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-golf-hills",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_(3)_-_2znAhcpYCBdq.jpg",
+    "description": "M3M Golf Hills is a true trendsetter of golf inspired living and offers a holistic living experience for a lifestyle that is a class apart. With an array of amenities and facilities overlooking the Aravalli\u2019s, M3M Golf Hills offer life that is truly global and world class besides being an address of stature. With a neighbourhood connected to all major hotspots, you are always close to all that you need in the vicinity.",
+    "amenities": [
+      "Rooftop Dinning",
+      "Multi-cuisine Restaurant",
+      "Swimming Pool",
+      "Dynamic Gym",
+      "Sports Arena",
+      "Boxing Studio",
+      "Jogging Track",
+      "Spa",
+      "Sensory Garden",
+      "Wellness Park",
+      "Yoga Zone"
+    ],
+    "connectivity": [],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1420 SQ.FT",
+            "price": "₹ 2.08 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1900 SQ.FT",
+            "price": "₹ 2.79 Cr"
+          },
+          {
+            "area": "2090 SQ.FT",
+            "price": "₹ 3.07 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "2,260 SQ.FT",
+            "price": "₹ 3.32 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "2630 SQ.FT",
+            "price": "₹ 3.86 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "2685 SQ.FT",
+            "price": "₹ 3.94 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M City of Dreams",
+    "status": "ongoing",
+    "price": "Price on Request",
+    "location": "Panipat",
+    "address": "Sector 36 & 37, Panipat Haryana",
+    "link": "https://m3mindia.com/residential/m3m-city-of-dreams",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_(1)_-_CVmCjOVxVbHL.jpg",
+    "description": "The landscape of Panipat is not just about its tangible size; it\u2019s also about the immeasurable capacity it holds. Thriving through the ages, M3M embodies prosperity, where boundaries to success are mere illusions. With modern engineering, remarkable architecture, advanced technology, and top-notch hospitality services, M3M sets a new standard for excellence.",
+    "amenities": [
+      "Fully Serviced Gym",
+      "Jogging Tracks",
+      "Fitness Stations",
+      "Yoga Lawn",
+      "Meditation Garden",
+      "Zen Garden",
+      "Spaces for Varied Age Groups",
+      "Connected Neighborhood",
+      "Mini Cricket Stadium",
+      "Skating Rink",
+      "Aerobic Lawn",
+      "Outdoor Laughing Park"
+    ],
+    "connectivity": [
+      {
+        "name": "1 Minute Away",
+        "distance": "Tau Devilal Park"
+      },
+      {
+        "name": "5 Minutes Away",
+        "distance": "Ram Lal Chowk"
+      },
+      {
+        "name": "8 Minutes Away",
+        "distance": "Shivaji Stadium"
+      },
+      {
+        "name": "7 Minutes Away",
+        "distance": "Model Town"
+      },
+      {
+        "name": "8 Minutes Away",
+        "distance": "Civil Hospital"
+      },
+      {
+        "name": "7 Minutes Away",
+        "distance": "Railway Station"
+      }
+    ]
+  },
+  {
+    "name": "M3M Capital",
+    "status": "ongoing",
+    "price": "₹2.12 Cr - ₹3.73 Cr",
+    "location": "Delhi, NCR",
+    "address": "Sector 113, SCDA, Dwarka Expressway, Delhi NCR",
+    "link": "https://m3mindia.com/residential/m3m-capital",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_-_dDBoogCRCJRn.jpg",
+    "description": "Imagine a life of unparalleled luxury and convenience. At M3M Capital, you'll find it all-serene green spaces, meticulously designed interiors, and a prime location. It's more than a home; it's a lifestyle upgrade.",
+    "amenities": [
+      "Fitness Centre",
+      "Yoga and Meditation Zones",
+      "Jogging Tracks",
+      "Golf Putting Area",
+      "Sports Arena",
+      "Private Events Area with a Dining Bar",
+      "Kids Play Zone",
+      "Art Studios Outdoor",
+      "Spa",
+      "Outdoor Party Lawn"
+    ],
+    "connectivity": [
+      {
+        "name": "UER II",
+        "distance": "3 Minutes Away"
+      },
+      {
+        "name": "Yashobhoomi",
+        "distance": "5 Minutes Away"
+      },
+      {
+        "name": "IGI Airport, Delhi",
+        "distance": "7 Minutes Away"
+      },
+      {
+        "name": "Dwarka Golf Course",
+        "distance": "10 Minutes Away"
+      },
+      {
+        "name": "Bharat Vandana Park",
+        "distance": "10 Minutes Away"
+      },
+      {
+        "name": "New Diplomatic Zone",
+        "distance": "15 Minutes Away"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1300 SQ.FT",
+            "price": "₹ 2.11 Cr"
+          },
+          {
+            "area": "1310 SQ.FT",
+            "price": "₹ 2.13 Cr"
+          },
+          {
+            "area": "1330 SQ.FT",
+            "price": "₹ 2.16 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1695 SQ.FT",
+            "price": "₹ 2.75 Cr"
+          },
+          {
+            "area": "1700 SQ.FT",
+            "price": "₹ 2.76 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1650 SQ.FT",
+            "price": "₹ 2.68 Cr"
+          },
+          {
+            "area": "1665 SQ.FT",
+            "price": "₹ 2.7 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "2060 SQ.FT",
+            "price": "₹ 3.35 Cr"
+          },
+          {
+            "area": "2100 SQ.FT",
+            "price": "₹ 3.41 Cr"
+          },
+          {
+            "area": "2298 SQ.FT",
+            "price": "₹ 3.73 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "2055 SQ.FT",
+            "price": "₹ 3.34 Cr"
+          },
+          {
+            "area": "2249 SQ.FT",
+            "price": "₹ 3.65 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Antalya Hills",
+    "status": "ongoing",
+    "price": "₹1.67 Cr - ₹2.07 Cr",
+    "location": "Gurugram",
+    "address": "Sector 79, Gururgram",
+    "link": "https://m3mindia.com/residential/m3m-antalya-hills",
+    "image": "https://m3mindia.com/storage/dy-images/residential/banner_images/banner_-_EFp42egp2e6L.jpg",
+    "description": "M3M Antalya Hills is nestled in the mystical Aravalli Hills, evolving into a nature-infused futuristic habitat. Thoughtfully designed to provide the best luxury living experience, the township demonstrates the prudent use of cutting-edge technology and multi-utility design. With the highest standards of aesthetics, work-life balance, fun, and enduring comfort, you can now enjoy the best of city access and an unbelievable natural living habitat, away from the hustle, bustle, and maddening monotony of city life.",
+    "amenities": [
+      "Gym",
+      "Swimming Pool",
+      "Yoga Zone",
+      "Jogging Tracks",
+      "Community Gardens",
+      "Dedicated Greens for Every Block",
+      "Pet-Friendly Park",
+      "Multi-Purpose-Halls",
+      "Mini Theatre",
+      "Restaurants",
+      "Cafes",
+      "Spa and Sauna"
+    ],
+    "connectivity": [],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1235 SQ.FT",
+            "price": "₹ 1.67 Cr"
+          }
+        ]
+      },
+      {
+        "type": "2.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1138 SQ.FT",
+            "price": "₹ 1.54 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1534 SQ.FT",
+            "price": "₹ 2.07 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1518 SQ.FT",
+            "price": "₹ 2.05 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Soulitude",
+    "status": "ongoing",
+    "price": "₹1.33 Cr - ₹1.71 Cr",
+    "location": "Gurugram",
+    "address": "Sector 89,\u00a0Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-soulitude",
+    "image": "https://m3mindia.com/storage/dy-images/residential/banner_images/M3M_Soulitude_banner_-_fkWYylUZJIFm.jpg",
+    "description": "M3M Soulitude, a rare luxury of Low-rise living, in Sector 89, Gurugram. Spread over 30 lush acres, it offers exclusive 2 & 3 BHK boutique floors with customizable basements, private terraces, and smartly designed layouts. \r\nEnjoy a tranquil lifestyle with top-notch connectivity and modern conveniences at your doorstep. We bring you a vibrant community that offers a complete lifestyle to keep up your spirits and experience\u00a0soulful\u00a0living.",
+    "amenities": [
+      "Gymnasiums",
+      "Club",
+      "Party Lawns",
+      "Multi - Purpose Courts",
+      "Pet Park",
+      "Organic Garden",
+      "Healing Garden"
+    ],
+    "connectivity": [
+      {
+        "name": "2 Minutes Away",
+        "distance": "Dwarka Expressway"
+      },
+      {
+        "name": "5 Minutes Away",
+        "distance": "NH \u2013 8"
+      },
+      {
+        "name": "10 Minutes Away",
+        "distance": "SPR"
+      },
+      {
+        "name": "25 Minutes Away",
+        "distance": "Medanta"
+      },
+      {
+        "name": "30 Minutes Away",
+        "distance": "Cyber Hub"
+      },
+      {
+        "name": "30 Minutes Away",
+        "distance": "IGI Airport"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1105 SQ.FT",
+            "price": "₹ 1.33 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1423 SQ.FT",
+            "price": "₹ 1.71 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Fairway West",
+    "status": "delivered",
+    "price": "₹9.75 Cr - ₹14 Cr",
+    "location": "Gurugram",
+    "address": "Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-fairway-west",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_1_fairway_west_-_yIJXdp2zlDgF.jpg",
+    "description": "M3M Golfestate Fairway West is a pinnacle of luxury within the iconic Golf Estate. Its majestic towers elegantly surround a signature 9-hole executive golf course, forming a stunning architectural marvel.  \r\nEncased in a serene golf landscape with fountains, water features, and lush greenery, Fairway West offers scenic beauty and refined living. The residences cocoon you in unmatched elegance and comfort, setting a new benchmark for luxury living.",
+    "connectivity": [
+      {
+        "name": "1.5 km Away",
+        "distance": "St. Xavier's High School"
+      },
+      {
+        "name": "7.0 Km Away",
+        "distance": "Medanta - The Medicity Hospital"
+      },
+      {
+        "name": "6.2 Km Away",
+        "distance": "Huda City Centre Metro Station"
+      },
+      {
+        "name": "25 Km Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "8 Km Away",
+        "distance": "DLF Cyber City"
+      },
+      {
+        "name": "5.5 Km Away",
+        "distance": "NH-8 Highway"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "3898 SQ.FT",
+            "price": "₹ 9.75 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "4010 SQ.FT",
+            "price": "₹ 10.75 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "4990 SQ.FT",
+            "price": "₹ 14 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Fairway East",
+    "status": "delivered",
+    "price": "₹4.67 Cr - ₹10.88 Cr",
+    "location": "Gurugram",
+    "address": "Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-fairway-east",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_1_fairway_east_-_bbrzHX5JH3uz.jpg",
+    "description": "M3M Fairway East is an eclogue of luxury which is a part of Golf Estate. A mystical paradise situated at Golf Course Road (Extn.), Gurugram. Wrapped in sophistication, it proffers a statement of doting exclusivity. A haven where modern amenities meet unparalleled quality with uncommon architectural details like the luxury of space and linear design.",
+    "connectivity": [
+      {
+        "name": "1.5 km Away",
+        "distance": "St. Xavier's High School"
+      },
+      {
+        "name": "7.0 Km Away",
+        "distance": "Medanta - The Medicity Hospital"
+      },
+      {
+        "name": "6.2 Km Away",
+        "distance": "Huda City Centre Metro Station"
+      },
+      {
+        "name": "25 Km Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "8 Km Away",
+        "distance": "DLF Cyber City"
+      },
+      {
+        "name": "5.5 Km Away",
+        "distance": "NH-8 Highway"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "2124 SQ.FT",
+            "price": "₹ 4.67 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "2882 SQ.FT",
+            "price": "₹ 6.34 Cr"
+          },
+          {
+            "area": "2979 SQ.FT",
+            "price": "₹ 6.55 Cr"
+          },
+          {
+            "area": "2985 SQ.FT",
+            "price": "₹ 6.57 Cr"
+          },
+          {
+            "area": "3129 SQ.FT",
+            "price": "₹ 6.88 Cr"
+          },
+          {
+            "area": "3203 SQ.FT",
+            "price": "₹ 7.05 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "4096 SQ.FT",
+            "price": "₹ 9.01 Cr"
+          },
+          {
+            "area": "4785 SQ.FT",
+            "price": "₹ 10.53 Cr"
+          },
+          {
+            "area": "4845 SQ.FT",
+            "price": "₹ 10.66 Cr"
+          },
+          {
+            "area": "4847 SQ.FT",
+            "price": "₹ 10.66 Cr"
+          },
+          {
+            "area": "4944 SQ.FT",
+            "price": "₹ 10.88 Cr"
+          }
+        ]
+      },
+      {
+        "type": "5 BHK Apartment",
+        "variants": [
+          {
+            "area": "5760 SQ.FT",
+            "price": "₹ 12.67 Cr"
+          },
+          {
+            "area": "7851 SQ.FT",
+            "price": "₹ 17.27 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Panorama Suites",
+    "status": "delivered",
+    "price": "₹9.64 Cr - ₹9.8 Cr",
+    "location": "Gurugram",
+    "address": "Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-panorama-suites",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_panorama_suites_-_sDkbf1eBlxWy.jpg",
+    "description": "Awaken to stunning views, where lush greenery and a sprawling golf course embrace your every glance. Comprising just 36 meticulously designed suites within the prestigious M3M Golfestate, these living spaces embody the pinnacle of luxury. Smartly crafted for modern living, each suite ensures that every convenience and indulgence is at your fingertips. \r\nSet within an oasis of tranquility, M3M Panorama offers an exclusive residential resort experience like no other.",
+    "connectivity": [
+      {
+        "name": "1.4 Km Away",
+        "distance": "M3M Cosmopolitan Mall"
+      },
+      {
+        "name": "2 Km Away",
+        "distance": "M3M Urbana Mall"
+      },
+      {
+        "name": "3.9 Km Away",
+        "distance": "Park Hospital Gurugram"
+      },
+      {
+        "name": "2.2 km Away",
+        "distance": "Spaze Business Park"
+      },
+      {
+        "name": "30 Minutes  Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "10 Minutes Away",
+        "distance": "NH-8"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "3.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "3709 SQ.FT",
+            "price": "₹ 9.64 Cr"
+          },
+          {
+            "area": "3733 SQ.FT",
+            "price": "₹ 9.71 Cr"
+          },
+          {
+            "area": "3747 SQ.FT",
+            "price": "₹ 9.74 Cr"
+          },
+          {
+            "area": "3771 SQ.FT",
+            "price": "₹ 9.8 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Polo Suites",
+    "status": "delivered",
+    "price": "₹9.98 Cr - ₹12.53 Cr",
+    "location": "Gurugram",
+    "address": "Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-polo-suites",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_1_-_cMgmVECmqoWE.jpg",
+    "description": "M3M Polo Suites, nestled within the 56+ acres of M3M Golfestate, step into the heart of Gurugram\u2019s regal essence\u2014a majestic Capitol where grandeur reigns.\r\nThe suites offer a living experience where art and aristocracy converge. The residences are designed as fortresses of opulence, each detail a tribute to an elite legacy. Curated with polo-inspired motifs and crafted by an international team of experts, these lavish homes exude unmatched sophistication. 3, 4 & 5 BHK Luxury Apartments.",
+    "connectivity": [
+      {
+        "name": "1.2 km Away",
+        "distance": "Basant Valley Global School"
+      },
+      {
+        "name": "1.5 km Away",
+        "distance": "AIPL Joy Centre"
+      },
+      {
+        "name": "3.9 km  Away",
+        "distance": "Park Hospital (Gurugram)"
+      },
+      {
+        "name": "4.3 km  Away",
+        "distance": "DoubleTree by Hilton"
+      },
+      {
+        "name": "13 Km  Away",
+        "distance": "NH 48"
+      },
+      {
+        "name": "24.1 km  Away",
+        "distance": "Indira Gandhi International Airport"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "3980 SQ.FT",
+            "price": "₹ 9.98 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "4010 SQ.FT",
+            "price": "Price on Request"
+          },
+          {
+            "area": "4968 SQ.FT",
+            "price": "₹ 12.46 Cr"
+          },
+          {
+            "area": "4995 SQ.FT",
+            "price": "₹ 12.53 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M St. Andrews",
+    "status": "delivered",
+    "price": "Around ₹ 15.93 Cr",
+    "location": "Gurugram",
+    "address": "Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-st-andrews",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_1_-_nGpcnOmAJ6jh.jpg",
+    "description": "M3M St. Andrews is the crown jewel of M3M Golfestate, set amidst 56+ acres of world-class golf-themed residences. Inspired by the iconic St. Andrews course in Scotland, it embodies the pinnacle of ultra-premium living, crafted for the elite.\r\nThese exclusive residences boast expansive spaces and impeccable attention to detail, offering a private sanctuary away from the crowd. At M3M St. Andrews, luxury living meets tranquility, designed for those who seek only the finest.",
+    "connectivity": [
+      {
+        "name": "1.6 km Away",
+        "distance": "Pragyanam School"
+      },
+      {
+        "name": "1.7 Km Away",
+        "distance": "Ivory Block Park"
+      },
+      {
+        "name": "2.8 Km Away",
+        "distance": "Mittal Hospital"
+      },
+      {
+        "name": "4.1 Km Away",
+        "distance": "Sohna Road"
+      },
+      {
+        "name": "3.9 Km Away",
+        "distance": "Sparsh Hospital"
+      },
+      {
+        "name": "25 Km Away",
+        "distance": "Indira Gandhi International Airport"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1475 SQ.FT",
+            "price": "Price on Request"
+          },
+          {
+            "area": "1600 SQ.FT",
+            "price": "Price on Request"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "2100 SQ.FT",
+            "price": "Price on Request"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "6000 SQ.FT",
+            "price": "₹ 15 Cr"
+          },
+          {
+            "area": "6335 SQ.FT",
+            "price": "₹ 15.84 Cr"
+          },
+          {
+            "area": "6365 SQ.FT",
+            "price": "Price on Request"
+          }
+        ]
+      },
+      {
+        "type": "5 BHK Apartment",
+        "variants": [
+          {
+            "area": "6171 SQ.FT",
+            "price": "₹ 15.43 Cr"
+          },
+          {
+            "area": "6265 SQ.FT",
+            "price": "₹ 15.66 Cr"
+          },
+          {
+            "area": "6343 SQ.FT",
+            "price": "₹ 15.86 Cr"
+          },
+          {
+            "area": "6351 SQ.FT",
+            "price": "₹ 15.88 Cr"
+          },
+          {
+            "area": "6371 SQ.FT",
+            "price": "₹ 15.93 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M SkySuites",
+    "status": "delivered",
+    "price": "₹ 10.93 Cr - ₹ 25 Cr",
+    "location": "Gurugram",
+    "address": "Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-skysuites",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_1_-_x95bJuGmsLhU.jpg",
+    "description": "M3M SkySuites represents the epitome of elite living, offering an unrivaled lifestyle of opulence, unmatched leisure, and complete privacy. Nestled within the iconic M3M Golfestate on Golf Course Road Extn. it is a sanctuary of sophistication and exclusivity.\r\nWith residences spanning from 9,000 sq. ft. to 15,000 sq. ft., each suite is thoughtfully designed to offer expansive, open spaces, allowing residents to experience life in its fullest grandeur. A true retreat for those accustomed to the very best, M3M SkySuites promises a luxury living experience.",
+    "connectivity": [
+      {
+        "name": "1.3 Km Away",
+        "distance": "St. Xavier's High School"
+      },
+      {
+        "name": "7.0 Km Away",
+        "distance": "Medanta - The Medicity Hospital"
+      },
+      {
+        "name": "6.2 Km Away",
+        "distance": "Huda City Centre Metro Station"
+      },
+      {
+        "name": "25 Km Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "8 Km Away",
+        "distance": "DLF Cyber City"
+      },
+      {
+        "name": "5.5 Km Away",
+        "distance": "NH-8 Highway"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "4 BHK",
+        "variants": [
+          {
+            "area": "8,800 SQ.FT - 15,000 SQ.FT",
+            "price": "From ₹10.56 Cr"
+          }
+        ]
+      },
+      {
+        "type": "5 BHK",
+        "variants": [
+          {
+            "area": "8,800 SQ.FT - 15,000 SQ.FT",
+            "price": "From ₹10.56 Cr"
+          }
+        ]
+      },
+      {
+        "type": "6 BHK",
+        "variants": [
+          {
+            "area": "Up to 15,112 SQ.FT",
+            "price": "Up to ₹25 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Latitude",
+    "status": "delivered",
+    "price": "₹ 5.52 Cr - ₹ 6.56 Cr",
+    "location": "Gurugram",
+    "address": "Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-latitude",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/22_10_01_M3M_\u00a9\ufe0f_NOUGHTS_AND_CROSSES_502_Desktop_-_AILhtYtsSXdj.jpg",
+    "description": "M3M Latitude redefines luxury living with an iconic singular tower which is part of Golf Estate that commands breathtaking views of Gurugram\u2019s modern skyline. An architectural masterpiece, it is a harmonious blend of exceptional design, world-class amenities, and unparalleled privacy. Designed for the connoisseurs of contemporary luxury, M3M Latitude offers a lifestyle that\u2019s nothing short of extraordinary.",
+    "connectivity": [
+      {
+        "name": "1 km Away",
+        "distance": "St. Xavier's High School"
+      },
+      {
+        "name": "3.5 km Away",
+        "distance": "Medicity Hospital"
+      },
+      {
+        "name": "5.5 km Away",
+        "distance": "NH-8 Highway"
+      },
+      {
+        "name": "7 Km Away",
+        "distance": "MG Road Metro Station"
+      },
+      {
+        "name": "25 km Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "8 km Away",
+        "distance": "DLF Cyber City"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "2380 SQ.FT",
+            "price": "₹ 5.52 Cr"
+          },
+          {
+            "area": "2499 SQ.FT",
+            "price": "₹ 5.8 Cr"
+          },
+          {
+            "area": "2982 SQ.FT",
+            "price": "₹ 6.56 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "2875 SQ.FT",
+            "price": "₹ 6.33 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Merlin",
+    "status": "delivered",
+    "price": "₹ 3.66 Cr - ₹ 5.59 Cr",
+    "location": "Gurugram",
+    "address": "Golf Course Road Extn., Sector 67, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-merlin",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_merlin_-_U7d29RJLjtHh.jpg",
+    "description": "M3M Merlin offers a magical experience of Singapore-style world-class apartments in the heart of Gurugram. This luxurious residential development features spacious 3 and 4 BHK apartments, along with exclusive penthouses, all designed to provide a harmonious blend of comfort and elegance. With meticulously planned layouts and top-notch amenities, M3M Merlin caters to the aspirations of modern urban dwellers seeking an upscale lifestyle.",
+    "connectivity": [
+      {
+        "name": "0.95 km Away",
+        "distance": "Alpine Convent School"
+      },
+      {
+        "name": "3.1 km Away",
+        "distance": "MKD Hospital"
+      },
+      {
+        "name": "3.7 km Away",
+        "distance": "Airia Mall"
+      },
+      {
+        "name": "3.9 km Away",
+        "distance": "Golf Course Road Extn."
+      },
+      {
+        "name": "4.9 km Away",
+        "distance": "Lemon Tree Hotel, Sohna Road"
+      },
+      {
+        "name": "24.8 km Away",
+        "distance": "Indira Gandhi International Airport"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "2025 SQ.FT",
+            "price": "₹ 3.66 Cr"
+          },
+          {
+            "area": "2035 SQ.FT",
+            "price": "₹ 3.67 Cr"
+          },
+          {
+            "area": "2037 SQ.FT",
+            "price": "₹ 3.68 Cr"
+          },
+          {
+            "area": "2047 SQ.FT",
+            "price": "₹ 3.69 Cr"
+          },
+          {
+            "area": "2305 SQ.FT",
+            "price": "₹ 4.16 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "3100 SQ.FT",
+            "price": "₹ 5.6 Cr"
+          },
+          {
+            "area": "3103 SQ.FT",
+            "price": "₹ 5.6 Cr"
+          },
+          {
+            "area": "3125 SQ.FT",
+            "price": "₹ 5.64 Cr"
+          },
+          {
+            "area": "3154 SQ.FT",
+            "price": "₹ 5.69 Cr"
+          },
+          {
+            "area": "3297 SQ.FT",
+            "price": "₹ 5.95 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Woodshire",
+    "status": "delivered",
+    "price": "₹ 1.35 Cr - ₹ 2.76 Cr",
+    "location": "Gurugram",
+    "address": "Sector 107, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-woodshire",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/woodshire-desk_-_UItDHq799QOv.jpg",
+    "description": "M3M Woodshire is a premium residential development designed to offer a serene and tranquil environment amidst the bustling cityscape. Located in Sector 107, Gurugram, this project provides a harmonious blend of modern amenities and natural surroundings, ensuring a lifestyle that enriches the soul.",
+    "connectivity": [
+      {
+        "name": "0 km Away",
+        "distance": "Delhi Border"
+      },
+      {
+        "name": "12 Km Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "15 Km Away",
+        "distance": "NH-8"
+      },
+      {
+        "name": "10 km Away",
+        "distance": "Dwarka Sector 21 Metro Station: 10 km"
+      },
+      {
+        "name": "1.4 km Away",
+        "distance": "The Shikshiyan School"
+      },
+      {
+        "name": "2.5 km Away",
+        "distance": "Nora Solomon Medicenter"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1366 SQ.FT",
+            "price": "₹ 1.35 Cr"
+          },
+          {
+            "area": "1536 SQ.FT",
+            "price": "Price on Request"
+          }
+        ]
+      },
+      {
+        "type": "2.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1534 SQ.FT",
+            "price": "₹ 1.45 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1943 SQ.FT",
+            "price": "₹ 1.85 Cr"
+          },
+          {
+            "area": "2361 SQ.FT",
+            "price": "₹ 2.04 Cr"
+          }
+        ]
+      },
+      {
+        "type": "4 BHK Apartment",
+        "variants": [
+          {
+            "area": "2746 SQ.FT",
+            "price": "₹ 2.37 Cr"
+          },
+          {
+            "area": "2762 SQ.FT",
+            "price": "Price on Request"
+          },
+          {
+            "area": "2768 SQ.FT",
+            "price": "Price on Request"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Escala",
+    "status": "delivered",
+    "price": "₹ 1.99 Cr - ₹ 4.73 Cr",
+    "location": "Gurugram",
+    "address": "Sector 70A, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-escala",
+    "image": "https://m3mindia.com/storage/dy-images/residential/banner_images/desktop_banner_(2)_-_FQwfcs8jN4JH.jpg",
+    "description": "M3M Escala is a boutique residential development offering exclusive 2 and 3 BHK apartments designed to provide a harmonious blend of comfort and elegance. Nestled in Sector 70A, Gurugram, this project offers residents a serene living environment with modern amenities and expansive green spaces.",
+    "connectivity": [
+      {
+        "name": "0.16 km Away",
+        "distance": "St. Angel's Global School"
+      },
+      {
+        "name": "4.4 km Away",
+        "distance": "Sohna Road"
+      },
+      {
+        "name": "4.7 Km Away",
+        "distance": "Lemon Tree Hotel, Sohna Road"
+      },
+      {
+        "name": "5.2 km Away",
+        "distance": "Delhi Jaipur Expressway"
+      },
+      {
+        "name": "6.3 km Away",
+        "distance": "M3M IFC"
+      },
+      {
+        "name": "32.3 km Away",
+        "distance": "Indira Gandhi International Airport"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1475 SQ.FT",
+            "price": "₹ 1.99 Cr"
+          },
+          {
+            "area": "1512 SQ.FT",
+            "price": "₹ 2.04 Cr"
+          },
+          {
+            "area": "1547 SQ.FT",
+            "price": "₹ 2.09 Cr"
+          }
+        ]
+      },
+      {
+        "type": "2.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1600 SQ.FT",
+            "price": "₹ 2.16 Cr"
+          },
+          {
+            "area": "1638 SQ.FT",
+            "price": "₹ 2.21 Cr"
+          },
+          {
+            "area": "1642 SQ.FT",
+            "price": "₹ 2.22 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "2100 SQ.FT",
+            "price": "₹ 2.84 Cr"
+          },
+          {
+            "area": "2145 SQ.FT",
+            "price": "₹ 2.9 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Penthouse",
+        "variants": [
+          {
+            "area": "3275 SQ.FT",
+            "price": "₹ 4.43 Cr"
+          },
+          {
+            "area": "3500 SQ.FT",
+            "price": "₹ 4.73 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Heights",
+    "status": "delivered",
+    "price": "₹ 2.23 Cr - ₹ 3.54 Cr",
+    "location": "Gurugram",
+    "address": "Golf Course Road Extn., Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-heights",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_heights_-_qGBsXLcAwVeX.jpg",
+    "description": "Welcome to M3M Heights, where luxury meets convenience in the heart of Gurugram. Nestled within the vibrant mixed-use marvel of M3M 65th Avenue, this iconic residential development offers ultra-modern 2 and 3 BHK apartments designed for contemporary living. Located on Golf Course Road Extn., it boasts a prestigious neighbourhood surrounded by upscale developments. With international standard amenities and leisure options just steps away, M3M Heights redefines holistic living \u2014 bringing wellness, recreation, and urban convenience right at your doorstep. Live a life of endless possibilities and cherished moments.",
+    "connectivity": [
+      {
+        "name": "1 Minute* To",
+        "distance": "DPS International School"
+      },
+      {
+        "name": "1 Minute* To",
+        "distance": "M3M IFC"
+      },
+      {
+        "name": "10 Minutes* To",
+        "distance": "Medanta Medicity Hospital"
+      },
+      {
+        "name": "4 Minutes* To",
+        "distance": "WorldMark"
+      },
+      {
+        "name": "5 Minutes* To",
+        "distance": "CK Birla Hospital"
+      },
+      {
+        "name": "2 Minutes* To",
+        "distance": "Urbana Business Park"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1250 SQ.FT",
+            "price": "₹ 2.23 Cr"
+          },
+          {
+            "area": "1261 SQ.FT",
+            "price": "₹ 2.24 Cr"
+          },
+          {
+            "area": "1310 SQ.FT",
+            "price": "₹ 2.33 Cr"
+          },
+          {
+            "area": "1350 SQ.FT",
+            "price": "₹ 2.4 Cr"
+          },
+          {
+            "area": "1358 SQ.FT",
+            "price": "₹ 2.42 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1828 SQ.FT",
+            "price": "₹ 3.25 Cr"
+          },
+          {
+            "area": "1850 SQ.FT",
+            "price": "₹ 3.29 Cr"
+          },
+          {
+            "area": "1932 SQ.FT",
+            "price": "₹ 3.44 Cr"
+          },
+          {
+            "area": "1950 SQ.FT",
+            "price": "₹ 3.47 Cr"
+          },
+          {
+            "area": "1990 SQ.FT",
+            "price": "₹ 3.54 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Skycity",
+    "status": "delivered",
+    "price": "₹ 2.26 Cr - ₹ 3.65 Cr",
+    "location": "Gurugram",
+    "address": "Golf Course Road Extn., Sector 65, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-sky-city",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/Skycity_Desktop_-_XdJHn0vdXs6Q.jpg",
+    "description": "Welcome to M3M Skycity, where luxury meets convenience in the heart of Gurugram. Nestled within the vibrant mixed-use marvel of M3M 65th Avenue, this iconic residential development offers ultra-modern 2 and 3 BHK apartments designed for contemporary living. Located on Golf Course Road (Extn.), it boasts a prestigious neighbourhood surrounded by upscale developments. With international-standard amenities and leisure options just steps away, M3M Skycity redefines holistic living\u2014bringing wellness, recreation, and urban convenience right to your doorstep. Live a life of endless possibilities and cherished moments.",
+    "connectivity": [
+      {
+        "name": "1 Minute* To",
+        "distance": "DPS International School"
+      },
+      {
+        "name": "1 Minute* To",
+        "distance": "M3M IFC"
+      },
+      {
+        "name": "10 Minutes* To",
+        "distance": "Medanta Medicity Hospital"
+      },
+      {
+        "name": "4 Minutes* To",
+        "distance": "WorldMark"
+      },
+      {
+        "name": "5 Minutes* To",
+        "distance": "CK Birla Hospital"
+      },
+      {
+        "name": "2 Minutes* To",
+        "distance": "Urbana Business Park"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1261 SQ.FT",
+            "price": "₹ 2.26 Cr"
+          },
+          {
+            "area": "1280 SQ.FT",
+            "price": "₹ 2.29 Cr"
+          },
+          {
+            "area": "1310 SQ.FT",
+            "price": "₹ 2.35 Cr"
+          },
+          {
+            "area": "1358 SQ.FT",
+            "price": "₹ 2.43 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1800 SQ.FT",
+            "price": "₹ 3.22 Cr"
+          },
+          {
+            "area": "1828 SQ.FT",
+            "price": "₹ 3.28 Cr"
+          },
+          {
+            "area": "1932 SQ.FT",
+            "price": "₹ 3.46 Cr"
+          },
+          {
+            "area": "2000 SQ.FT",
+            "price": "₹ 3.58 Cr"
+          },
+          {
+            "area": "2040 SQ.FT",
+            "price": "₹ 3.65 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Marina",
+    "status": "delivered",
+    "price": "₹ 1.55 Cr - ₹ 2.54 Cr",
+    "location": "Gurugram",
+    "address": "Sector 68, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-marina",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_(3)_-_m59QohafLpet.jpg",
+    "description": "M3M Marina offers luxurious waterfront apartments designed for those who seek tranquility and elegance. These 2 and 3 BHK homes are crafted with meticulous attention to detail, blending modern architecture with resort-style amenities to create a serene and upscale living experience.",
+    "connectivity": [
+      {
+        "name": "1.6 km Away",
+        "distance": "Alpine Convent School"
+      },
+      {
+        "name": "2 Km Away",
+        "distance": "Airia Mall"
+      },
+      {
+        "name": "9.5 km Away",
+        "distance": "Sector 55-56 Metro Station"
+      },
+      {
+        "name": "25 Km Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "5.5 Km Away",
+        "distance": "NH-8 Highway"
+      },
+      {
+        "name": "7 Km Away",
+        "distance": "Medanta - The Medicity Hospital"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1260 SQ.FT",
+            "price": "₹ 1.55 Cr"
+          },
+          {
+            "area": "1304 SQ.FT",
+            "price": "₹ 1.6 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1550 SQ.FT",
+            "price": "₹ 1.91 Cr"
+          },
+          {
+            "area": "1595 SQ.FT",
+            "price": "₹ 1.96 Cr"
+          },
+          {
+            "area": "1650 SQ.FT",
+            "price": "₹ 2.03 Cr"
+          },
+          {
+            "area": "1692 SQ.FT",
+            "price": "₹ 2.08 Cr"
+          },
+          {
+            "area": "1900 SQ.FT",
+            "price": "₹ 2.34 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Sierra68",
+    "status": "delivered",
+    "price": "₹ 95 L - ₹ 1.24 Cr",
+    "location": "Gurugram",
+    "address": "Sector 68, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-sierra68",
+    "image": "https://m3mindia.com/storage/dy-images/retail/banner_images/desktop_banner_siera_1_-_qRCIJDydirQ6.jpg",
+    "description": "M3M Sierra is a premium residential development offering modern 2 and 3 BHK apartments designed to provide a harmonious blend of comfort and elegance. Situated in Sector 68, Gurugram, this project offers residents a serene living environment with modern amenities and expansive green spaces.",
+    "connectivity": [
+      {
+        "name": "0.16 km Away",
+        "distance": "St. Angel's Global School"
+      },
+      {
+        "name": "4.4 km Away",
+        "distance": "Sohna Road"
+      },
+      {
+        "name": "4.7 Km Away",
+        "distance": "Lemon Tree Hotel, Sohna Road"
+      },
+      {
+        "name": "5.2 km Away",
+        "distance": "Delhi Jaipur Expressway"
+      },
+      {
+        "name": "6.3 km Away",
+        "distance": "M3M IFC"
+      },
+      {
+        "name": "32.3 km Away",
+        "distance": "Indira Gandhi International Airport"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1192 SQ.FT",
+            "price": "₹ 95.36 L"
+          },
+          {
+            "area": "1197 SQ.FT",
+            "price": "₹ 95.76 L"
+          },
+          {
+            "area": "1199 SQ.FT",
+            "price": "₹ 95.92 L"
+          },
+          {
+            "area": "1200 SQ.FT",
+            "price": "₹ 96 L"
+          },
+          {
+            "area": "1202 SQ.FT",
+            "price": "₹ 96.16 L"
+          }
+        ]
+      },
+      {
+        "type": "2.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1450 SQ.FT",
+            "price": "₹ 1.16 Cr"
+          },
+          {
+            "area": "1478 SQ.FT",
+            "price": "₹ 1.18 Cr"
+          },
+          {
+            "area": "1545 SQ.FT",
+            "price": "₹ 1.24 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Ikonic",
+    "status": "delivered",
+    "price": "Price on Request",
+    "location": "Gurugram",
+    "address": "Sector 68, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-ikonic",
+    "image": "https://m3mindia.com/storage/dy-images/residential/banner_images/desktop_banner_-_DTbyaEdMGr2u.jpg",
+    "description": "M3M Ikonic offers exclusive 3 BHK luxury apartments designed to provide a harmonious blend of comfort and elegance. This project offers residents a serene living environment with modern amenities and expansive green spaces.",
+    "connectivity": [
+      {
+        "name": "0.16 km Away",
+        "distance": "St. Angel's Global School"
+      },
+      {
+        "name": "4.4 km Away",
+        "distance": "Sohna Road"
+      },
+      {
+        "name": "4.7 Km Away",
+        "distance": "Lemon Tree Hotel, Sohna Road"
+      },
+      {
+        "name": "5.2 km Away",
+        "distance": "Delhi Jaipur Expressway"
+      },
+      {
+        "name": "6.3 km Away",
+        "distance": "M3M IFC"
+      },
+      {
+        "name": "32.3 km Away",
+        "distance": "Indira Gandhi International Airport"
+      }
+    ]
+  },
+  {
+    "name": "M3M Natura",
+    "status": "delivered",
+    "price": "₹ 1.44 Cr - ₹ 1.72 Cr",
+    "location": "Gurugram",
+    "address": "Sector 68, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-natura",
+    "image": "https://m3mindia.com/storage/dy-images/residential/banner_images/desktop_banner_(1)_-_imxGBjapOWz6.jpg",
+    "description": "M3M Natura offers a serene living experience, seamlessly blending modern design with nature's tranquility. Situated in Gurugram's Sector 68, this residential haven provides residents with a harmonious environment, complemented by state-of-the-art amenities and lush green surroundings.",
+    "connectivity": [
+      {
+        "name": "7 Km Away",
+        "distance": "Medanta - The Medicity Hospital"
+      },
+      {
+        "name": "5 Km Away",
+        "distance": "GD Goenka Public School"
+      },
+      {
+        "name": "6 Km Away",
+        "distance": "Omaxe Celebration Mall"
+      },
+      {
+        "name": "10 km Away",
+        "distance": "Huda City Centre Metro Station"
+      },
+      {
+        "name": "25 Km Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "15 Km Away",
+        "distance": "Cyber City, Gurugram"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1200 SQ.FT",
+            "price": "₹ 1.44 Cr"
+          }
+        ]
+      },
+      {
+        "type": "2.5 BHK Apartment",
+        "variants": [
+          {
+            "area": "1478 SQ.FT",
+            "price": "₹ 1.72 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Flora68",
+    "status": "delivered",
+    "price": "₹ 1.44 Cr - ₹ 1.85 Cr",
+    "location": "Gurugram",
+    "address": "Sector 68, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-flora68",
+    "image": "https://m3mindia.com/storage/dy-images/residential/banner_images/desktop_banner_(1)_-_cqHoqzFqMPkd.jpg",
+    "description": "M3M Flora68 is a premium residential development offering 2 and 3 BHK apartments designed to create a perfect balance between modern living and natural serenity. With expansive green spaces and state-of-the-art amenities, it redefines comfort and elegance for its residents.",
+    "connectivity": [
+      {
+        "name": "0.16 km Away",
+        "distance": "St. Angel's Global School"
+      },
+      {
+        "name": "4.4 km Away",
+        "distance": "Sohna Road"
+      },
+      {
+        "name": "4.7 Km Away",
+        "distance": "Lemon Tree Hotel, Sohna Road"
+      },
+      {
+        "name": "5.2 km Away",
+        "distance": "Delhi Jaipur Expressway"
+      },
+      {
+        "name": "6.3 km Away",
+        "distance": "M3M IFC"
+      },
+      {
+        "name": "32.3 km Away",
+        "distance": "Indira Gandhi International Airport"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1270 SQ.FT",
+            "price": "₹ 1.44 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1635 SQ.FT",
+            "price": "₹ 1.85 Cr"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "M3M Skywalk",
+    "status": "delivered",
+    "price": "₹ 2.45 Cr - ₹ 3.54 Cr",
+    "location": "Gurugram",
+    "address": "Sector 74, Gurugram",
+    "link": "https://m3mindia.com/residential/m3m-skywalk",
+    "image": "https://m3mindia.com/storage/dy-images/residential/banner_images/desktop_banner_(1)_-_qlLiPkAU4NiQ.jpg",
+    "description": "M3M Skywalk offers contemporary 2 and 3 BHK residences designed for modern urban living. This project combines luxury with convenience, offering premium amenities and a seamless lifestyle experience for discerning homeowners.",
+    "connectivity": [
+      {
+        "name": "30 Minutes Away",
+        "distance": "Indira Gandhi International Airport"
+      },
+      {
+        "name": "10 Minutes Away",
+        "distance": "NH-8 Away"
+      },
+      {
+        "name": "Nearby",
+        "distance": "Proposed Metro Corridor"
+      },
+      {
+        "name": "5 Km Away",
+        "distance": "Top Educational Institutions"
+      },
+      {
+        "name": "5 Km Away",
+        "distance": "Leading Healthcare Facilities"
+      },
+      {
+        "name": "10 km Away",
+        "distance": "Major Business Hubs"
+      }
+    ],
+    "configurations": [
+      {
+        "type": "2 BHK Apartment",
+        "variants": [
+          {
+            "area": "1125 SQ.FT",
+            "price": "₹ 2.45 Cr"
+          },
+          {
+            "area": "1132 SQ.FT",
+            "price": "₹ 2.47 Cr"
+          },
+          {
+            "area": "1139 SQ.FT",
+            "price": "₹ 2.48 Cr"
+          },
+          {
+            "area": "1346 SQ.FT",
+            "price": "₹ 2.93 Cr"
+          }
+        ]
+      },
+      {
+        "type": "3 BHK Apartment",
+        "variants": [
+          {
+            "area": "1614 SQ.FT",
+            "price": "₹ 3.52 Cr"
+          },
+          {
+            "area": "1626 SQ.FT",
+            "price": "₹ 3.54 Cr"
+          }
+        ]
+      }
+    ]
+  }
+]

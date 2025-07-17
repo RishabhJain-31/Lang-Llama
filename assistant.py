@@ -1,0 +1,285 @@
+import os
+import re
+from typing import TypedDict
+from dotenv import load_dotenv
+from langchain.vectorstores import Chroma
+from langchain_openai import OpenAIEmbeddings, ChatOpenAI
+from langchain.schema import HumanMessage, SystemMessage
+from langgraph.graph import StateGraph
+import requests
+
+load_dotenv()
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+# Setup
+embedding_model = OpenAIEmbeddings(model="text-embedding-3-small", openai_api_key=OPENAI_API_KEY)
+chroma_db = Chroma(persist_directory="./chromadb", embedding_function=embedding_model)
+llm = ChatOpenAI(model="gpt-4o-mini", temperature=0, openai_api_key=OPENAI_API_KEY)
+
+# State
+class GraphState(TypedDict):
+    query: str
+    retrieved_docs: list[str]
+    response: str
+    history: list[str]
+    summary: str
+    # awaiting: bool # Track lead flow state
+
+
+def query_enrichment(state: GraphState) -> str:
+    user_query = state['query'].strip()
+    if len(user_query.split()) <= 3:
+        recent = state.get("history", [])[-4:]
+        context = "\n".join([msg for msg in recent if isinstance(msg, str)])
+        return f"{context}\nUser: {user_query}"
+    return user_query
+
+
+# Duplicate Query Detection
+def is_duplicate_query(state: GraphState) -> bool:
+    recent_queries = [msg for msg in state["history"] if isinstance(msg, str) and msg.startswith("User: ")]
+    last_queries = [q.replace("User: ", "") for q in recent_queries[-5:]]
+    return state["query"].strip().lower() in [q.strip().lower() for q in last_queries]
+
+def retrieve(state: GraphState) -> GraphState:
+    if is_duplicate_query(state):
+        print("🔁 Skipping duplicate query")
+        return state  # or return same docs again without re-fetching
+    # query enrichment, enhance 
+    enriched_query = query_enrichment(state)
+    print(f"🔍 Searching for: {enriched_query}")
+    docs=chroma_db.similarity_search(enriched_query, k=5 ) # check type of sear
+    
+    # print documents
+    for doc in docs:
+        # print(f"📄 Retrieved Doc: {doc.page_content}...")
+        print(f"🔖 Doc: {doc}")
+
+    # print docs metadata
+    for doc in docs:
+        print(f"🔖 Metadata: {doc.metadata}")
+
+
+    
+    # ✅ Optional: Deduplication by metadata ID
+    shown_ids = set()
+    for msg in state.get("history", []):
+        if isinstance(msg, str) and "metadata" in msg:           #Check if msg is a string and contains metadata
+            match = re.search(r'"id":\s*"(.+?)"', msg)         # Extract ID from metadata
+            if match:
+                shown_ids.add(match.group(1))                  #sh
+
+    filtered_docs = []
+    for doc in docs:
+        doc_id=doc.metadata.get("id")
+        if doc_id not in shown_ids:                         #if the id is not in shown_ids then append the doc otherwise not
+            filtered_docs.append(doc)
+        if len(filtered_docs) >= 5:
+            break
+
+    # query boosting, create multiple variations of the query
+    # de-duplicate documents
+    # top 5 documents based on similarity search score OR
+    # re-ranking to select top 5 - optional
+
+    # Extract keywords from user query (split by space, remove common stopwords)
+    # query = state['query'].lower()
+    # keywords = [w for w in re.findall(r'\w+', query) if w not in {'i', 'am', 'for', 'in', 'the', 'a', 'an', 'is', 'are', 'me', 'show', 'want', 'with', 'to', 'of', 'and', 'or', 'on', 'at', 'by', 'my', 'please', 'can', 'you', 'find', 'give', 'need', 'looking', 'like', 'any', 'near', 'project', 'group', 'bhk', 'apartment', 'apartments'}]
+
+    # Find docs that match any keyword (location, amenities, price, etc.)
+    # relevant_docs = []
+    # for doc in docs:
+    #     content = doc.page_content.lower()
+    #     if any(k in content for k in keywords):
+    #         relevant_docs.append(doc)
+
+    # If relevant docs found, use them; else fallback to similarity search
+    # if relevant_docs:
+    #     result_docs = relevant_docs[:4]
+    # else:
+    #     result_docs = docs[:4]
+
+    return {**state, "retrieved_docs": [doc.page_content for doc in filtered_docs]}
+
+
+# Node: Generate
+def generate(state: GraphState) -> GraphState:
+    prompt = f"""You are a smart real estate assistant for the company Traya.
+    Rules:
+    - Only use the information from the retrieved documents.
+    - Understand and respond to queries in both Hindi and English and HINGLISH also. (हिंदी और अंग्रेज़ी दोनों में समझें और जवाब दें)
+    - Keep the appropriate spaces between your output, not too much, not too less.
+    - NEVER guess. Say “I'm not sure” if no relevant info is found.
+    -DON'T HALLUCINATE. GIVE THE PROPER RELEVANT ANSWER FOR THE QUERY 
+    - Do not repeat the same project unless the user asks again.
+    - Avoid repeating project names already discussed.
+    - For short queries like "yes", "no", "ok", continue the conversation politely.
+    - If user says just "3bhk" or anything like that then ask: "Which location or project are you referring to?"
+    - If user asks for image/link, use fields in metadata or page content.
+    - If user provides phone number, acknowledge it briefly but don't ask again.
+    - You can use emojis to make the conversation more engaging.
+    - Ask for phone number if you observe the user is interested.
+    - Do not repeat the response once produced for a user until they demand.
+    -Learn from the conversation and adapt your responses.
+    - If info about the requested location is not found, suggest similar nearby locations.
+    - Do not say "I’m not sure" unless absolutely no information is available.
+
+    When you done with the follow ups and have clear understanding what user wants then Use this formatting:
+    - Project Name as heading (###)
+    - Ask for more details if needed.
+    - Always follow the assistant rules.
+    For example-
+        I am looking for 3
+        hk in Bangalore.
+        Sure! Which project or location are you referring to? Here are some options:    
+        I am looking for 3bhk in Prestige Group.
+        Here are the details for 3bhk in Prestige Group:
+    example 2-
+        I am looking for 3bhk in Bangalore.
+        Can you mention your budget?
+        This is how you can answer on your own way 
+
+    example 3-
+         i want 5 bhk under 10 crore
+         Sure! Here are some options for 5 BHK properties under 10 crore in Bangalore:
+         I'm Interested 
+         That's nice to hear! Can you please share your name, phone number, and preferred time for a call or site visit?
+    - Respond in a friendly and helpful manner.
+    - Well structured response with proper formatting.
+    - Easily readable and understandable.
+    -If you feel that user is interested in a project, ask for their name, phone number and preferred time for call or site visit.
+    Use this formatting for each project:
+
+    🏢 **Project Name**
+    📍 **Location:** location of that project
+    🛏️ **BHK Options:** 2 BHK, 3 BHK (etc.)
+    💰 **Price:** 
+            • 2 BHK – ₹ X Cr Size in sq ft or sq yard
+            • 3 BHK – ₹ Y Cr Size in sq ft or sq yard
+    ⭐ **Amenities:** amenity1, amenity2
+    🔗 **Link:** [Click Here](project_link)
+    🖼️ **Image:** (just paste the image in medium appropriate size)
+---
+
+Conversation Summary
+  {state['summary']}
+
+User Query:
+{state['query']}
+
+Retrieved Docs:
+{state['retrieved_docs']}
+"""
+    result = llm([SystemMessage(content="Always follow assistant rules."), HumanMessage(content=prompt)]).content.strip()
+    phone = re.search(r"\b[6-9]\d{9}\b", state["query"])
+    if phone:
+        print( f"Phone number detected: {phone.group()}")
+    return {**state, "response": result}
+
+# Node: Summarize
+def summarize(state: GraphState) -> GraphState:
+    summary_prompt = f"""
+Previous Summary:
+{state['summary']}
+
+User asked:
+{state['query']}
+
+Bot replied:
+{state['response']}
+
+Update the summary in 2 lines:
+Focus more on latest user query and bot response.
+Make it concise and relevant to the conversation.
+"""
+    summary = llm([HumanMessage(content=summary_prompt)]).content.strip()
+    history = state["history"] + [f"User: {state['query']}", f"Bot: {state['response']}"]
+    
+    updated_state = {**state, "summary": summary, "history": history}   
+    # updated_state = handle_lead_capture(updated_state)
+
+    return updated_state
+
+# def send_lead_to_backend(name: str, phone: str, preferred_time: str):
+    payload = {
+        "name": name,
+        "phone": phone,
+        "preferred_time": preferred_time
+    }
+    print("📥 Sending lead to backend:", payload)
+    try:
+        res = requests.post("http://127.0.0.1:8000/save_lead", json=payload)
+        return res.json()
+    except Exception as e:
+        print("❌ Error saving lead:", e)
+        return {"error": str(e)}
+
+# def handle_lead_capture(chat_state):
+    user_msg = chat_state["query"].strip()
+    response = ""
+    awaiting = chat_state.get("awaiting")
+
+    # Step 0: Handle "no" at any step
+    if user_msg.lower() in {"no", "nah", "nope", "not now"} and awaiting:
+        chat_state["awaiting"] = None
+        response = "No problem 😊 Let me know if you'd like a callback or site visit anytime later."
+        chat_state["response"] = response
+        chat_state["history"].append({"user": user_msg, "bot": response})
+        return chat_state
+
+    # Step 1: Start lead flow
+    if ("callback" in user_msg.lower() or "site visit" in user_msg.lower()) and not awaiting:
+        chat_state["awaiting"] = "name"
+        response = "Great! Can I get your name?"
+
+    # Step 2: Name collection
+    elif awaiting == "name":
+        if re.fullmatch(r"[6-9]\d{9}", user_msg):
+            response = "That looks like a phone number. Please tell me your name first 😊"
+        else:
+            chat_state["lead_name"] = user_msg.title()
+            chat_state["awaiting"] = "phone"
+            response = f"Thanks {chat_state['lead_name']}! Now your contact number?"
+
+    # Step 3: Phone number
+    elif awaiting == "phone":
+        if not re.fullmatch(r"[6-9]\d{9}", user_msg):
+            response = "Hmm, that doesn’t look like a valid 10-digit Indian mobile number. Can you check it again?"
+        else:
+            chat_state["lead_phone"] = user_msg
+            chat_state["awaiting"] = "time"
+            response = "Awesome! What’s your preferred time for the call or site visit?"
+
+    # Step 4: Time
+    elif awaiting == "time":
+        chat_state["preferred_time"] = user_msg
+        chat_state["awaiting"] = None  # Reset
+        # Save the lead
+        result = send_lead_to_backend(
+            chat_state.get("lead_name", "Unknown"),
+            chat_state.get("lead_phone", "Unknown"),
+            chat_state.get("preferred_time", user_msg)
+        )
+        response = f"✅ Got it! I've shared your details with the team. Expect a call around {chat_state['preferred_time']}!"
+
+    # Add response only if this function is actually handling something
+    if response:
+        chat_state["response"] = response
+        chat_state["history"].append({"user": user_msg, "bot": response})
+
+    return chat_state
+
+# Graph Build
+builder = StateGraph(GraphState)
+builder.add_node("retrieve", retrieve)
+builder.add_node("generate", generate)
+builder.add_node("summarize", summarize)
+builder.set_entry_point("retrieve")
+builder.add_edge("retrieve", "generate")
+builder.add_edge("generate", "summarize")
+builder.set_finish_point("summarize")
+app = builder.compile()
+app.name="M3M AGENT"
+
+
+# todo: check max token limit
