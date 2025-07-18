@@ -26,18 +26,36 @@ class GraphState(TypedDict):
     # awaiting: bool # Track lead flow state
 
 
-def query_enrichment(state: GraphState) -> str:
-    user_query = state['query'].strip()
-    if len(user_query.split()) <= 3:
-        recent = state.get("history", [])[-4:]
-        context = "\n".join([msg for msg in recent if isinstance(msg, str)])
-        return f"{context}\nUser: {user_query}"
-    return user_query
+# def query_enrichment(state: GraphState) -> str:
+#     user_query = state['query'].strip()
+#     if len(user_query.split()) <= 3:
+#         recent = state.get("history", [])[-4:]
+#         context = "\n".join([msg for msg in recent if isinstance(msg, str)])
+#         return f"{context}\nUser: {user_query}"
+#     return user_query
+
+def query_enrichment(state: GraphState)-> str:
+    query=state['query'].strip()
+    history="\n".join(i for i in state.get("history",[][-4:]) if isinstance(i, str))
+    
+    prompt = f"""You are an assistant that rewrites user queries for real estate search.
+If the query is vague or short, expand it using context relevantly.Focus more on recent query only if needed then add the previous history queries to it.
+Also if the query is short ,go for follow up question for more specificity.
+Context (chat history):
+{history}
+User Query:
+{query}
+
+Rewrite it as a complete and clear search query:"""
+    enriched=llm([HumanMessage(content=prompt)]).content.strip()
+    return enriched
 
 
 # Duplicate Query Detection
 def is_duplicate_query(state: GraphState) -> bool:
-    recent_queries = [msg for msg in state["history"] if isinstance(msg, str) and msg.startswith("User: ")]
+    recent_queries = [
+    msg for msg in state.get("history", []) if isinstance(msg, str) and msg.startswith("User: ")
+]
     last_queries = [q.replace("User: ", "") for q in recent_queries[-5:]]
     return state["query"].strip().lower() in [q.strip().lower() for q in last_queries]
 
@@ -48,19 +66,7 @@ def retrieve(state: GraphState) -> GraphState:
     # query enrichment, enhance 
     enriched_query = query_enrichment(state)
     print(f"🔍 Searching for: {enriched_query}")
-    docs=chroma_db.similarity_search(enriched_query, k=5 ) # check type of sear
-    
-    # print documents
-    for doc in docs:
-        # print(f"📄 Retrieved Doc: {doc.page_content}...")
-        print(f"🔖 Doc: {doc}")
-
-    # print docs metadata
-    for doc in docs:
-        print(f"🔖 Metadata: {doc.metadata}")
-
-
-    
+    docs=chroma_db.similarity_search(enriched_query, k=5 )
     # ✅ Optional: Deduplication by metadata ID
     shown_ids = set()
     for msg in state.get("history", []):
@@ -103,7 +109,7 @@ def retrieve(state: GraphState) -> GraphState:
 
 
 # Node: Generate
-def generate(state: GraphState) -> GraphState:
+def LLM(state: GraphState) -> GraphState:
     prompt = f"""You are a smart real estate assistant for the company Traya.
     Rules:
     - Only use the information from the retrieved documents.
@@ -159,10 +165,27 @@ def generate(state: GraphState) -> GraphState:
     ⭐ **Amenities:** amenity1, amenity2
     🔗 **Link:** [Click Here](project_link)
     🖼️ **Image:** (just paste the image in medium appropriate size)
+
+    If the user seems interested, you MUST collect the following details:
+- Name
+- Phone number (Indian 10-digit only)
+- Preferred time for call or site visit
+
+Once you collect all 3, summarize them clearly like this at the end:
+---
+Lead Info
+👤 Name: NAME
+📞 Phone: NUMBER
+⏰ Time: TIME
+---
+
+Only ask for missing details one by one.
+Once all are collected, say: "✅ I've shared your details with the team!"
+
 ---
 
 Conversation Summary
-  {state['summary']}
+  {state.get('summary', "")}
 
 User Query:
 {state['query']}
@@ -180,7 +203,7 @@ Retrieved Docs:
 def summarize(state: GraphState) -> GraphState:
     summary_prompt = f"""
 Previous Summary:
-{state['summary']}
+{state.get('summary', "")}
 
 User asked:
 {state['query']}
@@ -193,7 +216,7 @@ Focus more on latest user query and bot response.
 Make it concise and relevant to the conversation.
 """
     summary = llm([HumanMessage(content=summary_prompt)]).content.strip()
-    history = state["history"] + [f"User: {state['query']}", f"Bot: {state['response']}"]
+    history = (state.get("history") or []) + [f"User: {state['query']}", f"Bot: {state['response']}"]
     
     updated_state = {**state, "summary": summary, "history": history}   
     # updated_state = handle_lead_capture(updated_state)
@@ -272,11 +295,11 @@ Make it concise and relevant to the conversation.
 # Graph Build
 builder = StateGraph(GraphState)
 builder.add_node("retrieve", retrieve)
-builder.add_node("generate", generate)
+builder.add_node("LLM", LLM)
 builder.add_node("summarize", summarize)
 builder.set_entry_point("retrieve")
-builder.add_edge("retrieve", "generate")
-builder.add_edge("generate", "summarize")
+builder.add_edge("retrieve", "LLM")
+builder.add_edge("LLM", "summarize")
 builder.set_finish_point("summarize")
 app = builder.compile()
 app.name="M3M AGENT"

@@ -130,7 +130,7 @@ async def chat_route(request: Request):
             "retrieved_docs": [],
             "response": "",
             "history": chat_state.get("history", []),
-            "summary": chat_state.get("summary", "")
+            "summary": chat_state.get("summary", "") or ""
         }
 
         # Run LangGraph
