@@ -130,7 +130,10 @@ async def chat_route(request: Request):
             "retrieved_docs": [],
             "response": "",
             "history": chat_state.get("history", []),
-            "summary": chat_state.get("summary", "") or ""
+            "summary": chat_state.get("summary", "") or "",
+            "lead_name": chat_state.get("lead_name", ""),
+            "lead_phone": chat_state.get("lead_phone", ""),
+            "lead_sent": chat_state.get("lead_sent", False)
         }
 
         # Run LangGraph
@@ -139,6 +142,9 @@ async def chat_route(request: Request):
         # Update memory
         chat_state["history"] = state.get("history", [])
         chat_state["summary"] = state.get("summary", "")
+        chat_state["lead_name"] = state.get("lead_name", "")
+        chat_state["lead_phone"] = state.get("lead_phone", "")
+        chat_state["lead_sent"] = state.get("lead_sent", False)
 
         return {"reply": state["response"]}
     

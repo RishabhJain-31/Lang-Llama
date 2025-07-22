@@ -6,7 +6,7 @@ from langchain.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
 from langgraph.graph import StateGraph
-import requests
+from MESSAGE import send_lead 
 
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
@@ -23,6 +23,9 @@ class GraphState(TypedDict):
     response: str
     history: list[str]
     summary: str
+    lead_name: str | None  # Name of the lead
+    lead_phone: str | None  # Phone number of the lead
+    lead_sent: bool  # Whether lead has been sent
     # awaiting: bool # Track lead flow state
 
 
@@ -36,7 +39,7 @@ class GraphState(TypedDict):
 
 def query_enrichment(state: GraphState)-> str:
     query=state['query'].strip()
-    history="\n".join(i for i in state.get("history",[][-4:]) if isinstance(i, str))
+    history="\n".join(i for i in state.get("history",[])[-4:] if isinstance(i, str))
     
     prompt = f"""You are an assistant that rewrites user queries for real estate search.
 If the query is vague or short, expand it using context relevantly.Focus more on recent query only if needed then add the previous history queries to it.
@@ -49,8 +52,6 @@ User Query:
 Rewrite it as a complete and clear search query:"""
     enriched=llm([HumanMessage(content=prompt)]).content.strip()
     return enriched
-
-
 # Duplicate Query Detection
 def is_duplicate_query(state: GraphState) -> bool:
     recent_queries = [
@@ -110,7 +111,8 @@ def retrieve(state: GraphState) -> GraphState:
 
 # Node: Generate
 def LLM(state: GraphState) -> GraphState:
-    prompt = f"""You are a smart real estate assistant for the company Traya.
+    query= state['query'].strip()
+    prompt = f"""You are a smart real estate assistant for the company m3m.
     Rules:
     - Only use the information from the retrieved documents.
     - Understand and respond to queries in both Hindi and English and HINGLISH also. (हिंदी और अंग्रेज़ी दोनों में समझें और जवाब दें)
@@ -167,8 +169,7 @@ def LLM(state: GraphState) -> GraphState:
     🖼️ **Image:** (just paste the image in medium appropriate size)
 
     If the user seems interested, you MUST collect the following details:
-- Name
-- Phone number (Indian 10-digit only)
+- Name and Phone number (Indian 10-digit only) in one pass or in one message ensure.
 - Preferred time for call or site visit
 
 Once you collect all 3, summarize them clearly like this at the end:
@@ -193,11 +194,40 @@ User Query:
 Retrieved Docs:
 {state['retrieved_docs']}
 """
-    result = llm([SystemMessage(content="Always follow assistant rules."), HumanMessage(content=prompt)]).content.strip()
-    phone = re.search(r"\b[6-9]\d{9}\b", state["query"])
+    result = llm.invoke([
+        SystemMessage(content="Always follow assistant rules."),
+        HumanMessage(content=prompt)
+    ]).content.strip()
+
+    # Extract name & phone via LLM
+        # Extract name & phone via LLM
+    
+    # Detect phone number
+    phone_match = re.search(r"\b[6-9]\d{9}\b", query)
+    phone = phone_match.group(0) if phone_match else state.get("lead_phone")
+
+    # Detect name (naive approach for now)
+    name_match = re.search(r"\b(?:my name is|i am|this is)\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)", query, re.IGNORECASE)
+    name = name_match.group(1).strip() if name_match else state.get("lead_name")
+
+    if name:
+        print(f"✅ Name captured: {name}")
+    else:
+        print("❌ No name found")
+
     if phone:
-        print( f"Phone number detected: {phone.group()}")
-    return {**state, "response": result}
+        print(f"✅ Phone captured: {phone}")
+    else:
+        print("❌ No phone found")
+
+    if name and phone and not state.get("lead_sent"):
+        print(f"📤 Sending lead to WhatsApp: {name}, {phone}")
+        send_lead(name, phone)
+        return {**state, "response": result, "lead_name": name, "lead_phone": phone, "lead_sent": True}
+
+    return {**state, "response": result, "lead_name": name, "lead_phone": phone, "lead_sent": state.get("lead_sent", False)}
+
+
 
 # Node: Summarize
 def summarize(state: GraphState) -> GraphState:
@@ -223,74 +253,6 @@ Make it concise and relevant to the conversation.
 
     return updated_state
 
-# def send_lead_to_backend(name: str, phone: str, preferred_time: str):
-    payload = {
-        "name": name,
-        "phone": phone,
-        "preferred_time": preferred_time
-    }
-    print("📥 Sending lead to backend:", payload)
-    try:
-        res = requests.post("http://127.0.0.1:8000/save_lead", json=payload)
-        return res.json()
-    except Exception as e:
-        print("❌ Error saving lead:", e)
-        return {"error": str(e)}
-
-# def handle_lead_capture(chat_state):
-    user_msg = chat_state["query"].strip()
-    response = ""
-    awaiting = chat_state.get("awaiting")
-
-    # Step 0: Handle "no" at any step
-    if user_msg.lower() in {"no", "nah", "nope", "not now"} and awaiting:
-        chat_state["awaiting"] = None
-        response = "No problem 😊 Let me know if you'd like a callback or site visit anytime later."
-        chat_state["response"] = response
-        chat_state["history"].append({"user": user_msg, "bot": response})
-        return chat_state
-
-    # Step 1: Start lead flow
-    if ("callback" in user_msg.lower() or "site visit" in user_msg.lower()) and not awaiting:
-        chat_state["awaiting"] = "name"
-        response = "Great! Can I get your name?"
-
-    # Step 2: Name collection
-    elif awaiting == "name":
-        if re.fullmatch(r"[6-9]\d{9}", user_msg):
-            response = "That looks like a phone number. Please tell me your name first 😊"
-        else:
-            chat_state["lead_name"] = user_msg.title()
-            chat_state["awaiting"] = "phone"
-            response = f"Thanks {chat_state['lead_name']}! Now your contact number?"
-
-    # Step 3: Phone number
-    elif awaiting == "phone":
-        if not re.fullmatch(r"[6-9]\d{9}", user_msg):
-            response = "Hmm, that doesn’t look like a valid 10-digit Indian mobile number. Can you check it again?"
-        else:
-            chat_state["lead_phone"] = user_msg
-            chat_state["awaiting"] = "time"
-            response = "Awesome! What’s your preferred time for the call or site visit?"
-
-    # Step 4: Time
-    elif awaiting == "time":
-        chat_state["preferred_time"] = user_msg
-        chat_state["awaiting"] = None  # Reset
-        # Save the lead
-        result = send_lead_to_backend(
-            chat_state.get("lead_name", "Unknown"),
-            chat_state.get("lead_phone", "Unknown"),
-            chat_state.get("preferred_time", user_msg)
-        )
-        response = f"✅ Got it! I've shared your details with the team. Expect a call around {chat_state['preferred_time']}!"
-
-    # Add response only if this function is actually handling something
-    if response:
-        chat_state["response"] = response
-        chat_state["history"].append({"user": user_msg, "bot": response})
-
-    return chat_state
 
 # Graph Build
 builder = StateGraph(GraphState)

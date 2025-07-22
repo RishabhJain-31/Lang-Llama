@@ -4,3 +4,8 @@ langgraph
 chromadb
 python-dotenv
 pandas
+uvicorn
+fastapi
+pydantic
+jinja2
+twilio
