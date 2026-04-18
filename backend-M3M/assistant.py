@@ -9,13 +9,36 @@ from langgraph.graph import StateGraph
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 
+
 load_dotenv()
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
-# Embedding and LLM setup
-embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
-llm = ChatGroq(model_name="llama-3.3-70b-versatile", temperature=0, groq_api_key=GROQ_API_KEY)
-chroma_db = Chroma(persist_directory="./chroma_filtered", embedding_function=embedding_model)
+# Lazy-load embedding model and ChromaDB
+_embedding_model = None
+_chroma_db = None
+_llm = None
+
+def get_embedding_model():
+    global _embedding_model
+    if _embedding_model is None:
+        from langchain_community.embeddings import HuggingFaceEmbeddings
+        # Use a smaller model if needed: "paraphrase-MiniLM-L3-v2"
+        _embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
+    return _embedding_model
+
+def get_chroma_db():
+    global _chroma_db
+    if _chroma_db is None:
+        from langchain_community.vectorstores import Chroma
+        _chroma_db = Chroma(persist_directory="./chroma_filtered", embedding_function=get_embedding_model())
+    return _chroma_db
+
+def get_llm():
+    global _llm
+    if _llm is None:
+        from langchain_groq import ChatGroq
+        _llm = ChatGroq(model_name="llama-3.3-70b-versatile", temperature=0, groq_api_key=GROQ_API_KEY)
+    return _llm
 
 
 # State definition
@@ -46,7 +69,7 @@ Chat history:
 
 User query: {query}
 """
-    raw = llm.invoke([HumanMessage(content=prompt)]).content.strip()
+    raw = get_llm().invoke([HumanMessage(content=prompt)]).content.strip()
     # Strip markdown code fences if present
     raw = re.sub(r"```json\s*", "", raw)
     raw = re.sub(r"```", "", raw)
@@ -74,10 +97,11 @@ User query: {query}
 
 Return ONLY the rewritten query, nothing else."""
 
-    enriched_query = llm.invoke([HumanMessage(content=enrich_prompt)]).content.strip()
+    enriched_query = get_llm().invoke([HumanMessage(content=enrich_prompt)]).content.strip()
     print(f"🔍 Enriched query: {enriched_query}")
 
     # Build ChromaDB where filter from extracted filters
+    chroma_db = get_chroma_db()
     where_filter = {}
     if "location" in filters:
         where_filter["location"] = filters["location"]
@@ -152,7 +176,7 @@ Retrieved Documents:
 User Query: {query}
 """
 
-    result = llm.invoke([
+    result = get_llm().invoke([
         SystemMessage(content="You are M3M's real estate assistant. Always follow the rules above."),
         HumanMessage(content=prompt)
     ]).content.strip()
