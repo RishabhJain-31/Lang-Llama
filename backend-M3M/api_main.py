@@ -1,6 +1,3 @@
-import os
-import uvicorn
-
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -31,6 +28,4 @@ app.add_middleware(
 # Example: POST /api/v1/chat
 app.include_router(api_router, prefix="/api/v1")
 
-# Run the app
-port = int(os.environ.get("PORT", 8000))
-uvicorn.run("api_main:app", host="0.0.0.0", port=port)
+
